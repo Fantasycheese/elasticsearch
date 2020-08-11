@@ -16,4 +16,4 @@ ADD https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v${VERS
 RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install -b file:///tmp/elasticsearch-analysis-ik-${VERSION}.zip
 RUN rm -rf /tmp/*
 RUN rm -rf /usr/share/elasticsearch/config/analysis-ik
-COPY elasticsearch-analysis-ik-config-traditional-chinese-master/config/ik /usr/share/elasticsearch/config/analysis-ik
+COPY config/ik /usr/share/elasticsearch/config/analysis-ik
